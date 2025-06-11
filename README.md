@@ -27,9 +27,13 @@ This project was motivated by the **Fractal Robotics** vision: **To accelerate t
 ---
 
 # Note From the Author to the Community
-Hi, my name is Dan Brogan, and I am the founder of a startup called Fractal Robotics. I created the Fractal Cortex slicer as a product of Fractal Robotics to go along with the Fractal 5 Pro, which is a multidirectional 5-axis 3D printer I designed. My background is Mechanical and Astronautical Engineering, so this project forced me to teach myself how to create a software application from scratch. After 3 years of dedication to this project, I have decided to release both the Fractal Cortex slicer and designs for the Fractal 5 Pro under an open source license so that others can learn from, build upon, and contribute to it.
+Hi, my name is Dan Brogan, and I spent 3 years (2022-2025) bootstrapping a startup called Fractal Robotics while working part time jobs. Over those 3 years, I developed technical acumen in end-to-end robotics product development, improved my communication skills, and learned a great deal about what goes into running a startup. 
 
-Open sourcing this project allows me to fulfill my original goal: to accelerate the development of mechanical solutions in a way that benefits the broader community. By sharing my work, I hope to support researchers, developers, educators, and makers exploring similar ideas and to give others a clear window into the engineering and thought process behind the slicer.
+My career goal has always been and continues to be **to contribute to society through technology in a way that has a positive impact**. That goal got translated into the vision of Fractal Robotics, which is "to accelerate the development of mechanical solutions".
+
+At this point, I am unable to continue volunteering my full effort into this project. While I won't be stepping back entirely, I have decided to release both the Fractal Cortex slicer and designs for the Fractal 5 Pro under an open source license so that others can learn from, build upon, and contribute to it. 
+
+Open sourcing this project allows me to fulfill the original vision of Fractal Robotics. By sharing my work, I hope to support researchers, developers, educators, and makers exploring similar ideas.
 
 I'm excited to see where others take this work next.
 
