@@ -14,10 +14,23 @@ Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compati
 **What is multidirectional 5-axis slicing?**
 Multidirectional 5-axis slicing allows parts to be printed in "chunks", wherein the user may define any number of slicing directions for a given part. This method is not non-planar slicing.
 
-**Features**
+**User Guide**
 - 5-Axis Mode
-  - Apply 
+  - To slice a part (or multiple parts) in 5 axes, follow the instructions below
+    1. Assuming you've downloaded the source code to your local computer, open Fractal Cortex by right clicking on "slicer_main.py". Select "Edit with IDLE" > "Edit with IDLE 3.10 (64 Bit)". Once the file is open, run it by pressing F5. The window shown below should appear.
 
+    <p align="center">
+    <img src="./examples/Step_1.PNG" width="500">
+    </p>
+
+    2. Select one or more STL files by clicking the folder icon in the upper left.
+    3. Once you've selected an STL, 
+
+<p align="center">
+  <img src="./examples/Step_1.PNG" width="500">
+</p>
+
+   
 - 3-Axis Mode
 
 # Project Motivation
@@ -32,8 +45,8 @@ This project was motivated by the **Fractal Robotics** vision: **To accelerate t
     - Support structures waste material
 
 **🔒Inaccessibility of Existing 5-Axis FDM**
-  - No commercially available intuitive slicer applications
-    - Non-planar slicing requires significant training on advanced CAM softwares
+  - Options for existing 5-Axis slicer applications are limited
+    - Most non-planar slicing requires significant training on advanced CAM softwares and are not compatible with all geometries
   - Commercially available 5-Axis 3D printers are huge and expensive
 
 ---
