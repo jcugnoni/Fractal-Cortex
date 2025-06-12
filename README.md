@@ -12,11 +12,13 @@ Fractal Cortex is an open source multidirectional 5-axis FDM slicer.
 Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compatible with 3-axis slicing. It is organized in a familiar way to popular traditional 3-axis slicers and contains many of the same print settings. This overview will primarily cover what makes Fractal Cortex unique to existing slicer applications.
 
 **What is multidirectional 5-axis slicing?**
+
 Multidirectional 5-axis slicing allows parts to be printed in "chunks", wherein the user may define any number of slicing directions for a given part. This method is not non-planar slicing.
 
 **5-Axis Mode**
+
 To slice a part (or multiple parts) in 5 axes, follow the instructions below
-1. Assuming you've downloaded the source code to your local computer, open Fractal Cortex by right clicking on "slicer_main.py". Select "Edit with IDLE" > "Edit with IDLE 3.10 (64 Bit)". Once the file is open, run it by pressing F5. The window shown below should appear. Notice that 5-Axis Mode is the default selected mode.
+1. Assuming you've downloaded the source code to your local computer, open Fractal Cortex by right clicking on "slicer_main.py". Select "Edit with IDLE" > "Edit with IDLE 3.10 (64 Bit)". Once the file is open, run it by pressing F5. The window shown below should appear. Notice that 5-Axis Mode is selected by default.
 
 <p align="center">
 <img src="./examples/Step_1.PNG" width="500">
@@ -34,13 +36,27 @@ To slice a part (or multiple parts) in 5 axes, follow the instructions below
 <img src="./examples/Step_3.PNG" width="500">
 </p>
 
-4. Adjust the position and orientation of the blue slice plane using the 5 entry boxes within the "Current Slicing Direction" menu. You can add a new slice plane using the "+" button, remove a slice plane using the trash icon, or remove all slice planes to revert to the start of the previous step.
+4. Adjust the position and orientation of the blue slice plane using the 5 entry boxes within the "Current Slicing Direction" menu.
 
 <p align="center">
 <img src="./examples/Step_4.PNG" width="500">
 </p>
 
+5. You can add a new slice plane using the "+" button, remove a slice plane using the trash icon, or remove all slice planes to revert to the start of the previous step.
+
+<p align="center">
+<img src="./examples/Step_5.PNG" width="500">
+</p>
    
+6. Once you've defined all the slicing directions you want, you can cycle through the print settings on the right side of the screen to control many of the options that are standard in most traditional slicers, such as nozzle temperature, layer height, print speed, retraction, etc. Once you are content with your selection, hit the slice button.
+
+
+
+
+**Note**
+
+If Fractal Cortex detects that a slice plane will cause a collision between the nozzle and print bed, it will halt slicing calculations and color the "illegal" slice plane red until you redefine it to a "legal" position and orientation.
+
 - 3-Axis Mode
 
 # Project Motivation
