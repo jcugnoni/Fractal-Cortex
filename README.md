@@ -50,7 +50,7 @@ To slice a part (or multiple parts) in 5 axes, follow the instructions below
    
 6. Once you've defined all the slicing directions you want, you can cycle through the print settings on the right side of the screen to control many of the options that are standard in most traditional slicers, such as nozzle temperature, layer height, print speed, retraction, etc. Once you are content with your selection, hit the slice button.
 
-7. When slicing is finished, you can select the "Preview" button at the top of the screen to see a visualization of the 5-axis toolpath. From here you can save a copy of the gcode file.
+7. When slicing is finished, you can select the "Preview" button at the top of the screen to see a visualization of the 5-axis toolpath. From here you can save a copy of the gcode file. (The figure below has very thick layer lines to clearly show the multidirectional nature of the toolpaths)
 
 <p align="center">
 <img src="./examples/Step_7.PNG" width="500">
