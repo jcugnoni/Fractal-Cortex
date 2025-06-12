@@ -42,7 +42,7 @@ To slice a part (or multiple parts) in 5 axes, follow the instructions below
 <img src="./examples/Step_4.PNG" width="500">
 </p>
 
-5. You can add a new slice plane using the "+" button, remove a slice plane using the trash icon, or remove all slice planes to revert to the start of the previous step.
+5. You can add a new slice plane using the "+" button, remove a slice plane using the trash icon, or remove all slice planes to revert to the start of step 3.
 
 <p align="center">
 <img src="./examples/Step_5.PNG" width="500">
@@ -50,8 +50,11 @@ To slice a part (or multiple parts) in 5 axes, follow the instructions below
    
 6. Once you've defined all the slicing directions you want, you can cycle through the print settings on the right side of the screen to control many of the options that are standard in most traditional slicers, such as nozzle temperature, layer height, print speed, retraction, etc. Once you are content with your selection, hit the slice button.
 
+7. When slicing is finished, you can select the "Preview" button at the top of the screen to see a visualization of the 5-axis toolpath. From here you can save a copy of the gcode file.
 
-
+<p align="center">
+<img src="./examples/Step_7.PNG" width="500">
+</p>
 
 **Note**
 
