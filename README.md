@@ -8,26 +8,36 @@ Fractal Cortex is an open source multidirectional 5-axis FDM slicer.
   <img src="./examples/GUI_Prepare_Screenshot.PNG" width="700">
 </p>
 
-# Slicer Overview
+# User Guide
 Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compatible with 3-axis slicing. It is organized in a familiar way to popular traditional 3-axis slicers and contains many of the same print settings. This overview will primarily cover what makes Fractal Cortex unique to existing slicer applications.
 
 **What is multidirectional 5-axis slicing?**
 Multidirectional 5-axis slicing allows parts to be printed in "chunks", wherein the user may define any number of slicing directions for a given part. This method is not non-planar slicing.
 
-**User Guide**
-- 5-Axis Mode
-  - To slice a part (or multiple parts) in 5 axes, follow the instructions below
-    1. Assuming you've downloaded the source code to your local computer, open Fractal Cortex by right clicking on "slicer_main.py". Select "Edit with IDLE" > "Edit with IDLE 3.10 (64 Bit)". Once the file is open, run it by pressing F5. The window shown below should appear.
-
-    <p align="center">
-    <img src="./examples/Step_1.PNG" width="500">
-    </p>
-
-    2. Select one or more STL files by clicking the folder icon in the upper left.
-    3. Once you've selected an STL, 
+**5-Axis Mode**
+To slice a part (or multiple parts) in 5 axes, follow the instructions below
+1. Assuming you've downloaded the source code to your local computer, open Fractal Cortex by right clicking on "slicer_main.py". Select "Edit with IDLE" > "Edit with IDLE 3.10 (64 Bit)". Once the file is open, run it by pressing F5. The window shown below should appear. Notice that 5-Axis Mode is the default selected mode.
 
 <p align="center">
-  <img src="./examples/Step_1.PNG" width="500">
+<img src="./examples/Step_1.PNG" width="500">
+</p>
+
+2. Select one or more STL files by clicking the folder icon in the upper left. The STL should become visible in the graphics window. If you need to translate, rotate, or scale the STL file(s) you may do so by left-clicking on the desired STL file (or holding CTRL to select multiple or CTRL+A to select all) and using the geometry action toolbar on the lower left corner of the graphics window. To undo an action, press CTRL+Z. These geometry manipulation tools are standard in most traditional slicers. 
+
+<p align="center">
+<img src="./examples/Step_2.PNG" width="500">
+</p>
+
+3. Once you've opened an STL file, you can specify the starting number of slicing directions in the print settings on the right side of the screen. Notice that the lowest number you can select is 2, since the first slicing direction is always defined as the direction normal to the build plate. Having only 1 slicing direction would be the same as just slicing a part in 3 axes. Hit apply and you should see a blue plane and a new menu labelled "Current Slicing Direction" appear in the graphics window.
+
+<p align="center">
+<img src="./examples/Step_3.PNG" width="500">
+</p>
+
+4. Adjust the position and orientation of the blue slice plane using the 5 entry boxes within the "Current Slicing Direction" menu. You can add a new slice plane using the "+" button, remove a slice plane using the trash icon, or remove all slice planes to revert to the start of the previous step.
+
+<p align="center">
+<img src="./examples/Step_4.PNG" width="500">
 </p>
 
    
