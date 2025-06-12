@@ -17,7 +17,7 @@ Multidirectional 5-axis slicing allows parts to be printed in "chunks", wherein 
 
 **5-Axis Mode**
 
-To slice a part (or multiple parts) in 5 axes, follow the instructions below
+To slice a part (or multiple parts) in 5 axes, follow the instructions below:
 1. Assuming you've downloaded the source code to your local computer, open Fractal Cortex by right clicking on "slicer_main.py". Select "Edit with IDLE" > "Edit with IDLE 3.10 (64 Bit)". Once the file is open, run it by pressing F5. The window shown below should appear. Notice that 5-Axis Mode is selected by default.
 
 <p align="center">
@@ -58,11 +58,22 @@ To slice a part (or multiple parts) in 5 axes, follow the instructions below
 <img src="./examples/Step_7.PNG" width="500">
 </p>
 
-**Note**
+**3-Axis Mode**
 
-If Fractal Cortex detects that a slice plane will cause a collision between the nozzle and print bed, it will halt slicing calculations and color the "illegal" slice plane red until you redefine it to a "legal" position and orientation.
+To slice a part (or multiple parts) in 3 axes, follow the instructions below:
+1. Open Fractal Cortex and select "3-Axis Mode" on the top right of the screen under print settings. You can select one or more STL files and define print settings like you normally would in a traditional 3-axis slicer.
 
-- 3-Axis Mode
+<p align="center">
+<img src="./examples/3_Axis_Step_1.PNG" width="500">
+</p>
+
+2. After you hit slice, you can select the "Preview" button to see a visualization of the 3-axis toolpath. From here you can save a copy of the gcode file.
+
+<p align="center">
+<img src="./examples/3_Axis_Step_2.PNG" width="500">
+</p>
+
+---
 
 # Project Motivation
 This project was motivated by the **Fractal Robotics** vision: **To accelerate the development of mechanical solutions.** In support of this vision, this project aims to address the gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM.
