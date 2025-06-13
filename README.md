@@ -9,14 +9,14 @@ Fractal Cortex is an open source multidirectional 5-axis FDM slicer.
 </p>
 
 # User Guide
-Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compatible with 3-axis slicing. It is organized in a familiar way to popular traditional 3-axis slicers and contains many of the same print settings. This overview will primarily cover what makes Fractal Cortex unique to existing slicer applications.
+Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compatible with 3-axis slicing. To minimize the learning curve, many aspects of this slicer are designed to feel familiar to traditional 3-axis slicers. This overview will primarily cover the important differences that make Fractal Cortex unique from traditional 3-axis slicers.
 
 **What is multidirectional 5-axis slicing?**
 
 Multidirectional 5-axis slicing is a technique in which a 3D model is divided into sub-volumes (chunks) and each chunk is sliced in a different direction. This allows users to define multiple slicing directions for a given part. The result is a gcode file with toolpath instructions that include reorienting the part relative to the printhead. This approach is distinct from non-planar slicing, which modifies the surface of each layer to follow the curvature of the model's shape.
 
 <p align="center">
-<img src="./examples/Multidirectional_Slicing.PNG" width="500">
+<img src="./examples/Multidirectional_Slicing.PNG" width="700">
 </p>
 
 Non-planar slicing often requires significant training in advanced CAM software and tends to be computationally expensive. In contrast, multidirectional slicing provides many of the same benefits of 5-axis 3D printing - such as directional strength control and reduced support requirements - within a more accessable and familiar workflow. 
