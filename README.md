@@ -2,7 +2,7 @@
 
 Fractal Cortex is an open source multidirectional 5-axis FDM slicer.
 
-⚙️ A benchtop 5-axis 3D printer was developed to go along with this slicer. **You can check out the GitHub page for it here**.
+⚙️ An open-source benchtop 5-axis 3D printer was developed to go along with this slicer. **You can check out [the GitHub page for it here](https://github.com/fractalrobotics/Fractal-5-Pro)**.
 
 <p align="center">
   <img src="./examples/GUI_Prepare_Screenshot.PNG" width="700">
@@ -25,7 +25,7 @@ Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compati
 
 **What is multidirectional 5-axis slicing?**
 
-Multidirectional 5-axis slicing is a technique in which a 3D model is divided into sub-volumes (chunks) and each chunk is sliced in a different direction. This allows users to define multiple slicing directions for a given part. The result is a gcode file with toolpath instructions that include reorienting the part relative to the printhead. This approach is distinct from non-planar slicing, which modifies the surface of each layer to follow the curvature of the model's shape.
+Multidirectional 5-axis slicing is a technique in which a 3D model is divided into sub-volumes (chunks) and each chunk is sliced in a different direction. This allows users to define multiple slicing directions for a given part. The result is a gcode file with toolpath instructions that include reorienting the part relative to the printhead after each successive chunk is printed. This approach is distinct from non-planar slicing, which modifies the surface of each layer to follow the curvature of the model's shape.
 
 <p align="center">
 <img src="./examples/Multidirectional_Slicing.PNG" width="700">
@@ -50,7 +50,7 @@ To slice a part (or multiple parts) in 5 axes, follow the instructions below:
 <img src="./examples/Step_2.PNG" width="500">
 </p>
 
-3. Next, you can specify the starting number of slicing directions in the print settings on the right side of the screen. Notice that the lowest number you can select is 2, since the first slicing direction is always defined as the direction normal to the build plate. Having only 1 slicing direction would be the same as just slicing a part in 3 axes. Hit apply and you should see a blue plane and a new menu labelled "Current Slicing Direction" appear in the graphics window.
+3. Next, you can specify the starting number of slicing directions in the print settings on the right side of the screen. Notice that the lowest number you can select is 2, since the first slicing direction is always defined as the direction normal to the build plate. Having only 1 slicing direction would be the same as just slicing a part in 3 axes. Hit apply and you should see one or more blue planes (depending on how many slicing directions you selected) and a new menu labelled "Current Slicing Direction" appear in the graphics window.
 
 <p align="center">
 <img src="./examples/Step_3.PNG" width="500">
@@ -96,7 +96,7 @@ To slice a part (or multiple parts) in 3 axes, follow the instructions below:
 ---
 
 # Project Motivation
-This project was motivated by the **Fractal Robotics** vision: **To accelerate the development of mechanical solutions.** In support of this vision, this project aims to address the gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM.
+This project was motivated by the **Fractal Robotics** vision: **To accelerate the development of mechanical solutions.** In support of this vision, this project aims to address the observed gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM.
 
 **📋Limitations of 3-Axis FDM**
   - Part strength is limited due to the direction of printing
@@ -109,7 +109,26 @@ This project was motivated by the **Fractal Robotics** vision: **To accelerate t
 **🔒Inaccessibility of Existing 5-Axis FDM**
   - Options for existing 5-Axis slicer applications are limited
     - Most non-planar slicing requires significant training on advanced CAM softwares and are not compatible with all geometries
-  - Commercially available 5-Axis 3D printers are huge and expensive
+  - Most commercially available 5-Axis 3D printers are huge and expensive
+
+**🌉Bridging the Gap**
+
+The observations listed above prompted an investigation into the needs of 3D printing practitioners across different industries. The result was the development of both the Fractal Cortex slicer and the Fractal 5 Pro printer.
+
+# 🔎Product-Market Fit
+Dozens of potential customers were interviewed to determine 3D printing needs, budgets, and expectations across different industries. This process helped inform and focus design decisions.
+
+**🔑Key Customer Needs Translated to Design Decisions**
+
+Our response to the customer interviews was to design an accessible product package (hardware & software) that addressed the shortfalls of 3-axis FDM while still being easy to use.
+
+  - Control over orthotropic strength, less waste material, reduced post-processing risk ➡️ 5-Axis
+  - Ease of maintenance, clean setup ➡️ FDM, removable build surface, full-size front and side doors
+  - Reduced training time ➡️ Intuitive multidirectional slicer software, backwards compatibility with 3-Axis 3D printing
+  - Printing complex parts ➡️ Compatible with any 3D geometry
+  - High reliability ➡️ CoreXY gantry, auto bed leveling, rigid 30x30mm aluminum frame extrusions
+  - Expansive material compatibility ➡️ Direct Drive Extruder, heated build plate, fully enclosed
+  - Large print volume ➡️ 300mm Diameter x 250mm build height
 
 ---
 
@@ -146,3 +165,5 @@ While Fractal Cortex is functional as-is, there are some known issues that need 
 - RISBDC
 - RIHUB
 - Rhode Island startup community
+
+Copyright (C) 2025 Daniel Brogan
