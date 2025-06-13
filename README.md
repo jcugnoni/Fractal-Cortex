@@ -172,4 +172,6 @@ If you use Fractal Cortex and discover any other bugs, please let me know.
 - RIHUB
 - Rhode Island startup community
 
+---
+
 Copyright (C) 2025 Daniel Brogan
