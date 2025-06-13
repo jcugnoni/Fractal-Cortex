@@ -2,7 +2,7 @@
 
 Fractal Cortex is an open source multidirectional 5-axis FDM slicer.
 
-⚙️ An open-source benchtop 5-axis 3D printer was developed to go along with this slicer. **You can check out [the GitHub page for it here](https://github.com/fractalrobotics/Fractal-5-Pro)**.
+⚙️ An open-source benchtop 5-axis 3D printer was developed to go along with this slicer. You can check out [the GitHub page for it here](https://github.com/fractalrobotics/Fractal-5-Pro).
 
 <p align="center">
   <img src="./examples/GUI_Prepare_Screenshot.PNG" width="700">
@@ -113,14 +113,14 @@ This project was motivated by the **Fractal Robotics** vision: **To accelerate t
 
 **🌉Bridging the Gap**
 
-The observations listed above prompted an investigation into the needs of 3D printing practitioners across different industries. The result was the development of both the Fractal Cortex slicer and the Fractal 5 Pro printer.
+The observations listed above prompted an investigation into the needs of 3D printing practitioners across different industries. The result was the development of both the Fractal Cortex slicer and the [Fractal 5 Pro](https://github.com/fractalrobotics/Fractal-5-Pro) printer.
 
 # 🔎Product-Market Fit
 Dozens of potential customers were interviewed to determine 3D printing needs, budgets, and expectations across different industries. This process helped inform and focus design decisions.
 
 **🔑Key Customer Needs Translated to Design Decisions**
 
-Our response to the customer interviews was to design an accessible product package (hardware & software) that addressed the shortfalls of 3-axis FDM while still being easy to use.
+My response to the customer interviews was to design an accessible product package (hardware & software) that addressed the shortfalls of 3-axis FDM while still being easy to use.
 
   - Control over orthotropic strength, less waste material, reduced post-processing risk ➡️ 5-Axis
   - Ease of maintenance, clean setup ➡️ FDM, removable build surface, full-size front and side doors
@@ -137,24 +137,30 @@ Hi, my name is Dan Brogan, and I spent 3 years (2022-2025) bootstrapping a start
 
 My career goal has always been and continues to be **to contribute to society through technology in a way that has a positive impact**. That goal was translated into the vision of Fractal Robotics, which is "to accelerate the development of mechanical solutions".
 
-At this point, I am unable to continue volunteering my full effort into this project. While I won't be stepping back entirely, I have decided the best path for this project is to release both the Fractal Cortex slicer and designs for the Fractal 5 Pro under an open source license so that others can learn from, build upon, and contribute to it. 
+At this point, I am unable to continue volunteering my full effort into this project. While I won't be stepping back entirely, I have decided the best course of action is to release both the Fractal Cortex slicer and designs for the [Fractal 5 Pro](https://github.com/fractalrobotics/Fractal-5-Pro) under an open source license so that others can learn from, build upon, and contribute to it. 
 
-Open sourcing this project allows me to fulfill the original vision of Fractal Robotics. By sharing my work, I hope to support researchers, developers, educators, and makers exploring similar ideas.
+Open sourcing this project allows me to stay true to the original vision of Fractal Robotics. By sharing my work, I hope to support researchers, developers, educators, and makers exploring similar ideas.
 
 I'm excited to see where others take this work next.
 
-Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/) on LinkedIn.
+Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/) on LinkedIn. 
 
 ---
 
 # 📝Future Work
 
-While Fractal Cortex is functional as-is, there are some known issues that need to be addressed to make it a more robust product.
+While Fractal Cortex is functional in its current form, there are known issues that must be addressed to make it a more robust product. This slicer was written entirely from scratch - not based on the source code of any existing slicers - and developed solely by a mechanical engineer (me). As a result, it hasn't yet benefited from the broad debugging and refinement that comes with an active community.
+
+If you're interested in contributing to this project, I encourage you to prioritize **ease of use and simplicity**. These were key needs identified during early market research, and meeting them is essential for making multidirectional slicing more accessible to the 3D printing community.
+
+Here are some known issues:
 
 - Sometimes slicing calculations will encounter challenging geometry that halts the slicing process. This is the most important issue and requires more in-depth error handling within slicing_functions.py.
 - Improve efficiency of slicing calculations (I parallelized everything I could, but there's room for improvement)
 - Add support generation for both 3 and 5-axis modes
-- Add more advanced print settings
+- Add any remaining print settings that are essential (but try not to add too many options)
+
+If you use Fractal Cortex and discover any other bugs, please let me know.
 
 ---
 
