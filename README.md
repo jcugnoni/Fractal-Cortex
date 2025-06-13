@@ -8,8 +8,20 @@ Fractal Cortex is an open source multidirectional 5-axis FDM slicer.
   <img src="./examples/GUI_Prepare_Screenshot.PNG" width="700">
 </p>
 
-# User Guide
-Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compatible with 3-axis slicing. To minimize the learning curve, many aspects of this slicer are designed to feel familiar to traditional 3-axis slicers. This overview will primarily cover the important differences that make Fractal Cortex unique from traditional 3-axis slicers.
+# 💻System Requirements
+- OS: Windows 10
+- Python: 3.10.11
+- Python Libraries:
+  - glooey 0.3.6
+  - numpy 1.26.4
+  - numpy-stl 3.1.1
+  - pyglet 1.5.28
+  - pyOpenGL 3.1.0
+  - shapely 2.0.4
+  - trimesh 4.3.1
+
+# 📘User Guide
+Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compatible with 3-axis slicing. To minimize the learning curve, many aspects of this slicer have been designed to feel familiar to the user experience of traditional 3-axis slicers. This overview will primarily cover the important differences that make Fractal Cortex unique.
 
 **What is multidirectional 5-axis slicing?**
 
@@ -38,7 +50,7 @@ To slice a part (or multiple parts) in 5 axes, follow the instructions below:
 <img src="./examples/Step_2.PNG" width="500">
 </p>
 
-3. Once you've opened an STL file, you can specify the starting number of slicing directions in the print settings on the right side of the screen. Notice that the lowest number you can select is 2, since the first slicing direction is always defined as the direction normal to the build plate. Having only 1 slicing direction would be the same as just slicing a part in 3 axes. Hit apply and you should see a blue plane and a new menu labelled "Current Slicing Direction" appear in the graphics window.
+3. Next, you can specify the starting number of slicing directions in the print settings on the right side of the screen. Notice that the lowest number you can select is 2, since the first slicing direction is always defined as the direction normal to the build plate. Having only 1 slicing direction would be the same as just slicing a part in 3 axes. Hit apply and you should see a blue plane and a new menu labelled "Current Slicing Direction" appear in the graphics window.
 
 <p align="center">
 <img src="./examples/Step_3.PNG" width="500">
@@ -60,7 +72,7 @@ To slice a part (or multiple parts) in 5 axes, follow the instructions below:
 
     **Note:** If Fractal Cortex detects that a slice plane will cause a collision between the ***nozzle and print bed***, it will halt slicing calculations and color the "illegal" slice plane red until you redefine it to a "legal" position and orientation. You do not have to worry about collisions between the ***nozzle and in-process part*** because the slicer orders slicing directions in a safe manner no matter how you define them. With the exception of potential centering calibration issues with the printer hardware, the slicer should never produce G-Code that results in any type of collision.
 
-7. When slicing is finished, you can select the "Preview" button at the top of the screen to see a visualization of the 5-axis toolpath. From here you can save a copy of the gcode file. (The figure below has very thick layer lines to clearly show the multidirectional nature of the toolpaths)
+7. When slicing is finished, you can select the "Preview" button at the top of the screen to see a visualization of the 5-axis toolpath (The figure below has very thick layer lines to clearly show the multidirectional nature of the toolpaths). From here you can save a copy of the gcode file.
 
 <p align="center">
 <img src="./examples/Step_7.PNG" width="500">
@@ -114,22 +126,23 @@ I'm excited to see where others take this work next.
 
 Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/) on LinkedIn.
 
-# 💻System Requirements
-- OS: Windows 10
-- Python: 3.10.11
-- Python Libraries:
-  - glooey 0.3.6
-  - numpy 1.26.4
-  - numpy-stl 3.1.1
-  - pyglet 1.5.28
-  - pyOpenGL 3.1.0
-  - shapely 2.0.4
-  - trimesh 4.3.1
-
 ---
 
 # 📝Future Work
-- Incorporate support generation into both 3 and 5-axis modes
+
+While Fractal Cortex is functional as-is, there are some known issues that need to be addressed to make it a more robust product.
+
+- Sometimes slicing calculations will encounter challenging geometry that halts the slicing process. This is the most important issue and requires more in-depth error handling within slicing_functions.py.
+- Improve efficiency of slicing calculations (I parallelized everything I could, but there's room for improvement)
+- Add support generation for both 3 and 5-axis modes
+- Add more advanced print settings
+
+---
 
 # Acknowledgements
 
+- Family & friends
+- Innovate Newport
+- RISBDC
+- RIHUB
+- Rhode Island startup community
