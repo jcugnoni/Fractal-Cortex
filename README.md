@@ -13,7 +13,15 @@ Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compati
 
 **What is multidirectional 5-axis slicing?**
 
-Multidirectional 5-axis slicing allows parts to be printed in "chunks", wherein the user may define any number of slicing directions for a given part. This method is not non-planar slicing.
+Multidirectional 5-axis slicing is a technique in which a 3D model is divided into sub-volumes (chunks) and each chunk is sliced in a different direction. This allows users to define multiple slicing directions for a given part. The result is a gcode file with toolpath instructions that include reorienting the part relative to the printhead. This approach is distinct from non-planar slicing, which modifies the surface of each layer to follow the curvature of the model's shape.
+
+<p align="center">
+<img src="./examples/Multidirectional_Slicing.PNG" width="500">
+</p>
+
+Non-planar slicing often requires significant training in advanced CAM software and tends to be computationally expensive. In contrast, multidirectional slicing provides many of the same benefits of 5-axis 3D printing - such as directional strength control and reduced support requirements - within a more accessable and familiar workflow. 
+
+From a hardware standpoint, multidirectional 5-axis 3D printers avoid an important mechanical limitation of non-planar 5-axis 3D printers. Since they don't require the printhead to be long and thin to achieve tight angles, multidirectional printers can achieve much higher print speeds with far less vibration. That said, non-planar slicing is an exciting and evolving area of research, and ongoing developments will hopefully make that method more accessible as well.
 
 **5-Axis Mode**
 
