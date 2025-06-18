@@ -21,7 +21,7 @@ Fractal Cortex is an open source multidirectional 5-axis FDM slicer.
   - trimesh 4.3.1
 
 # 📘User Guide
-Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compatible with 3-axis slicing. To minimize the learning curve, many aspects of this slicer have been designed to feel familiar to the user experience of traditional 3-axis slicers. This overview will primarily cover the important differences that make Fractal Cortex unique.
+Fractal Cortex is a multidirectional 5-axis FDM slicer that is backwards compatible with 3-axis slicing. To minimize the learning curve, many aspects of this slicer were designed to feel familiar to the user experience of traditional 3-axis slicers. This overview will primarily cover the important differences that make Fractal Cortex unique.
 
 **What is multidirectional 5-axis slicing?**
 
@@ -115,6 +115,8 @@ This project was motivated by the **Fractal Robotics** vision: **To accelerate t
 
 The observations listed above prompted an investigation into the needs of 3D printing practitioners across different industries. The result was the development of both the Fractal Cortex slicer and the [Fractal 5 Pro](https://github.com/fractalrobotics/Fractal-5-Pro) printer.
 
+---
+
 # 🔎Product-Market Fit
 Dozens of potential customers were interviewed to determine 3D printing needs, budgets, and expectations across different industries. This process helped inform and focus design decisions.
 
@@ -143,7 +145,7 @@ Open sourcing this project allows me to stay true to the original vision of Frac
 
 I'm excited to see where others take this work next.
 
-Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/) on LinkedIn. 
+Feel free to [connect with me](https://www.linkedin.com/in/dan-brogan-442b27128/) on LinkedIn and reach out to me via email: dan@fractalrobotics.com.
 
 ---
 
@@ -160,7 +162,7 @@ Here are some known issues:
 - Add support generation for both 3 and 5-axis modes
 - Add any remaining print settings that are essential (but try not to add too many options)
 
-If you use Fractal Cortex and discover any other bugs, please let me know.
+If you use Fractal Cortex and discover any other bugs or potential improvements, please let me know: dan@fractalrobotics.com
 
 ---
 
