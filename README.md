@@ -1,4 +1,4 @@
-<img src="./examples/fractal_robotics_logo.png" width="700">
+<img src="./examples/fractal_robotics_logo.png" width="350">
 
 # Fractal Cortex
 
