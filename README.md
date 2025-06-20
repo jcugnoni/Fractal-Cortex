@@ -1,6 +1,6 @@
 # Fractal Cortex
 
-Fractal Cortex is an open source multidirectional 5-axis FDM slicer.
+Fractal Cortex is an open source multidirectional 5-axis FDM slicer developed by **Fractal Robotics**.
 
 ⚙️ An open-source benchtop 5-axis 3D printer was developed to go along with this slicer. You can check out [the GitHub page for it here](https://github.com/fractalrobotics/Fractal-5-Pro).
 
