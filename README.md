@@ -1,5 +1,6 @@
-<h1 style="display: inline-block; vertical-align: middle;">Fractal Cortex</h1>
-<img src="./examples/fractal_robotics_logo.png" alt="Logo" width="200" style="vertical-align: middle; margin-left: 10px;">
+# Fractal Cortex
+
+<img src="./examples/fractal_robotics_logo.png" width="150">
 
 Fractal Cortex is an open source multidirectional 5-axis FDM slicer developed by **Fractal Robotics**.
 
