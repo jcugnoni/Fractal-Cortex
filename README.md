@@ -168,6 +168,12 @@ If you use Fractal Cortex and discover any other bugs or potential improvements,
 
 ---
 
+# Disclaimer
+
+Fractal Cortex is open-source software provided ‘as-is’ without any warranty. By using, modifying, or distributing this software, you assume full responsibility for any outcomes, including potential bugs, data loss, or hardware issues that may result from its use.
+
+---
+
 # Acknowledgements
 
 - Family & friends
