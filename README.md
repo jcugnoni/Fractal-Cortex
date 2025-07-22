@@ -33,10 +33,6 @@ Multidirectional 5-axis slicing is a technique in which a 3D model is divided in
 <img src="./examples/Multidirectional_Slicing.PNG" width="700">
 </p>
 
-Non-planar slicing often requires significant training in advanced CAM software and tends to be computationally expensive. In contrast, multidirectional slicing provides many of the same benefits of 5-axis 3D printing - such as directional strength control and reduced support requirements - within a more accessable and familiar workflow. 
-
-From a hardware standpoint, multidirectional 5-axis 3D printers avoid an important mechanical limitation of non-planar 5-axis 3D printers. Since they don't require the printhead to be long and thin to achieve tight angles, multidirectional printers can achieve much higher print speeds with far less vibration. That said, non-planar slicing is an exciting and evolving area of research, and ongoing developments will hopefully make that method more accessible as well.
-
 **5-Axis Mode**
 
 To slice a part (or multiple parts) in 5 axes, follow the instructions below:
@@ -98,24 +94,27 @@ To slice a part (or multiple parts) in 3 axes, follow the instructions below:
 ---
 
 # Project Motivation
-This project was motivated by the **Fractal Robotics** vision: **To accelerate the development of mechanical solutions.** In support of this vision, this project aims to address the observed gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM.
+This project was motivated by the **Fractal Robotics** vision: **To accelerate the development of mechanical solutions.** In support of this vision, this project aims to help close the observed gap between some of the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM.
 
 **📋Limitations of 3-Axis FDM**
-  - Part strength is limited due to the direction of printing
-    - Parts often fail when forces are applied parallel to the direction of layer lines
-    - Stacking layers in only one direction limits design freedom
   - Overhangs require support structures
     - The process of removing supports often damages or destroys a part
-    - Support structures waste material
+    - Support structures waste material and prolong printing time
+  - Part strength is limited due to the nature of planar layer deposition
+    - Parts are more vulnerable to shear forces applied parallel to layer lines compared to forces applied perpendicular to layer lines
 
 **🔒Inaccessibility of Existing 5-Axis FDM**
   - Options for existing 5-Axis slicer applications are limited
-    - Most non-planar slicing requires significant training on advanced CAM softwares and are not compatible with all geometries
+    - Most non-planar slicing requires significant training on advanced CAM softwares
   - Most commercially available 5-Axis 3D printers are huge and expensive
 
 **🌉Bridging the Gap**
 
-The observations listed above prompted an investigation into the needs of 3D printing practitioners across different industries. The result was the development of both the Fractal Cortex slicer and the [Fractal 5 Pro](https://github.com/fractalrobotics/Fractal-5-Pro) printer.
+The observations listed above prompted an investigation into the needs of 3D printing practitioners across different industries. Two 5-axis FDM methods were considered for addressing as many customer needs as possible while emphasizing ease of use. Those methods were non-planar and multidirectional 5-axis FDM. Each of these approaches has their own benefits and drawbacks. While non-planar 5-axis addresses both the supports issue and the interlaminar shear strength issue posed by 3-axis FDM, that approach typically requires significant training in advanced CAM software and tends to be computationally expensive. By contrast, multidirectional 5-axis focuses primarily on mitigating the need for support structures, but has the potential for providing a much more accessible user experience compared to non-planar 5-axis.
+
+Also, from a hardware standpoint, multidirectional 5-axis 3D printers avoid an important mechanical limitation of non-planar 5-axis 3D printers. Since they don't require the printhead to be long and thin to achieve tight angles, multidirectional printers can achieve much higher print speeds with far less vibration. That said, non-planar slicing is an exciting and evolving area of research, and ongoing developments will hopefully make that method more accessible as well.
+
+The result of this trade study was the development of both the Fractal Cortex slicer and the [Fractal 5 Pro](https://github.com/fractalrobotics/Fractal-5-Pro) printer.
 
 ---
 
@@ -124,9 +123,7 @@ Dozens of potential customers were interviewed to determine 3D printing needs, b
 
 **🔑Key Customer Needs Translated to Design Decisions**
 
-My response to the customer interviews was to design an accessible product package (hardware & software) that addressed the shortfalls of 3-axis FDM while still being easy to use.
-
-  - Control over orthotropic strength, less waste material, reduced post-processing risk ➡️ 5-Axis
+  - Reduced post-processing risk, less waste material ➡️ 5-Axis
   - Ease of maintenance, clean setup ➡️ FDM, removable build surface, full-size front and side doors
   - Reduced training time ➡️ Intuitive multidirectional slicer software, backwards compatibility with 3-Axis 3D printing
   - Printing complex parts ➡️ Compatible with any 3D geometry
@@ -162,7 +159,7 @@ Here are some known issues:
 - Sometimes slicing calculations will encounter challenging geometry that halts the slicing process. This is the most important issue and requires more in-depth error handling within slicing_functions.py.
 - Improve efficiency of slicing calculations (I parallelized everything I could, but there's room for improvement)
 - Add support generation for both 3 and 5-axis modes
-- Add any remaining print settings that are essential (but try not to add too many options)
+- Add any remaining print settings that are essential (but try not to add too many bells and whistles)
 
 If you use Fractal Cortex and discover any other bugs or potential improvements, please let me know: dan@fractalrobotics.com
 
