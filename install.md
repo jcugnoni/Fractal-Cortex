@@ -37,3 +37,27 @@ fractalCortexVenv/bin/python3 slicer_main.py
 --- patching for case sensitive OS (Linux ; MacOs):
 
 if using the official version of Fractal Cortex code released before this fork changes are commited, you will need to patch the following files:
+```
+fractal_widgets.py:916 > modify line to fix case of image file name
+     pyglet.resource.path = [".", "image_resources/CheckBox_Images"]
+
+widget_functions.py:1171+ > correct case of image file names
+   scale=Unlabeled_Image_Button(
+        "image_resources/apply_Button_Images/base.png",
+        "image_resources/apply_Button_Images/over.png",
+        "image_resources/apply_Button_Images/down.png",
+        apply_placeholder,
+        [],
+    ),
+
+widget_functions.py:1171+ > correct case of image file names
+	rotate=Unlabeled_Image_Button(
+        "image_resources/apply_Button_Images/base.png",
+        "image_resources/apply_Button_Images/over.png",
+        "image_resources/apply_Button_Images/down.png",
+        apply_placeholder,
+        [],
+    ),
+    scale=Widget_Label(""),
+
+```
