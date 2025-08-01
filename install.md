@@ -61,3 +61,6 @@ widget_functions.py:1171+ > correct case of image file names
     scale=Widget_Label(""),
 
 ```
+-- testing: 
+
+the example pipe_fitting.stl was successfully sliced with this install procedure on Ubunt 24.04.
